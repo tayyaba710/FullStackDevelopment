@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            position: relative;
+            overflow-x: hidden;
+            overflow-y: auto;
+            height: 100vh;
+            background-color: rgb(177, 176, 176);
+        }
+
+        header ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        header li {
+            float: left;
+        }
+
+        header li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        header li a:hover {
+            background-color: #111;
+        }
+
+        .content a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .foodimages {
+            width: 50%;
+            margin: 0 auto;
+        }
+
+        label {
+            margin: 0px 200px;
+        }
+
+        .fooditem {
+            width: 400px;
+            height: 400px;
+        }
+
+        footer {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            background-color: #333;
+
+        }
+    </style>
+    <title>Favorite Foods WebApp
+    </title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Index</a></li>
+                <li><a href="#">Food</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="fooditem">
+            <h2>Top 5 Favorite Foods List</h2>
+            <nav>
+                <ul>
+                    <li><a href="#biryani">Biryani</a></li>
+                    <li><a href="#cake">Cake</a></li>
+                    <li><a href="#pizza">Pizza</a></li>
+                    <li><a href="#wings">Wings</a></li>
+                    <li><a href="#chopsuey">Chopsuey</a></li>
+                </ul>
+            </nav>
+        </section>
+        <section class="foodimages">
+            <div id="biryani">
+                <img src="biryani.jpg" class="fooditem" alt="image of biryani">
+            </div>
+            <label for="biryani">Biryani</label>
+            <div id="cake">
+                <img src="https://i.postimg.cc/MptV4bmV/cake.jpg" class="fooditem" alt="image of cake">
+            </div>
+            <label for="cake">Cake</label>
+            <div id="pizza">
+                <img src="https://i.postimg.cc/3R0GkM5F/pizza.jpg" class="fooditem" alt="image of pizza">
+            </div>
+            <label for="pizza">Pizza</label>
+            <div id="wings">
+                <img src="https://i.postimg.cc/SNJBjDJN/wings.jpg" class="fooditem" alt="image of wings">
+            </div>
+            <label for="wings">Wings</label>
+            <div id="chopsuey">
+                <img src="https://i.postimg.cc/T3jCPDq3/choupsey.jpg" class="fooditem" alt="image of Chopsuey">
+            </div>
+            <label for="chopsuey">Chopsuey</label>
+            <a href=""></a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        &copy;Tayyaba Kouser
+    </footer>
+</body>
+
+</html>
