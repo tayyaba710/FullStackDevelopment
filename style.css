@@ -1,0 +1,17 @@
+.box1 {
+  background-color: brown;
+  height: 200px;
+  width: 200px;
+}
+.box2 {
+  background-color: pink;
+  height: 200px;
+  width: 200px;
+}
+.circle {
+  background-image: conic-gradient(from 90deg at 0 0, red, yellow);
+  border-radius: 50%;
+  margin-left: 350px;
+  height: 200px;
+  width: 200px;
+}

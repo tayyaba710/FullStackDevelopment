@@ -1,0 +1,832 @@
+/*
+colors
+primary: #e47312
+navtext: #414147
+white:  #ffffff
+shadow heading: #f9f9fc
+light background: #f7f8fc
+dark background: #0a1229
+*/
+
+/* structural */
+
+body {
+  font-family: "Dosis", sans-serif;
+  font-size: 14px;
+  background-color: #ffffff;
+  margin: 1.6em;
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+/* other elements */
+
+.space-between {
+  justify-content: space-between;
+}
+
+#section-one {
+  background-image: linear-gradient(
+      76deg,
+      rgba(193, 195, 204, 0.83) 35%,
+      rgba(193, 195, 204, 0.28) 65%
+    ),
+    url("https://nuuk-e3eaa.firebaseapp.com/assets/img/slide-2.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+p {
+  margin-bottom: 10px;
+  color: #919197;
+  font-size: 17px;
+  line-height: 25px;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.no-border {
+  border: 0px;
+}
+
+#nav-holder {
+  justify-content: center;
+  margin-top: 1em;
+}
+
+#nav-container {
+  justify-content: space-between;
+  align-content: center;
+  width: 90%;
+  background-color: #ffffff;
+}
+
+#logo_holder {
+  background-color: #e47312;
+  align-items: center;
+}
+
+#logo_link {
+  justify-content: center;
+  padding: 0.5em 2em;
+  position: relative;
+  top: 10px;
+  background-color: #e47312;
+  height: 100%;
+}
+
+.nav-item {
+  padding: 2em 1em;
+  color: #414147;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.nav-item.active {
+  color: #e47312;
+}
+
+#nav_free_quote_button,
+#banner_free_quote_button {
+  background-color: #e47312;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+#banner_free_quote_button {
+  width: fit-content;
+  padding: 15px 25px;
+  text-align: center;
+  margin-top: 2em;
+  z-index: 1;
+}
+
+#nav_free_quote_button:hover,
+#banner_free_quote_button:hover {
+  background-color: #e98a38;
+}
+
+#banner {
+  justify-content: center;
+  margin-top: 1em;
+  padding-bottom: 10em;
+}
+
+#banner h1 {
+  color: #ffffff;
+  font-size: 62px;
+  line-height: 70px;
+  margin-bottom: 0px;
+  font-weight: 600;
+}
+
+.para-white {
+  margin-bottom: 5px;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 300;
+}
+
+#banner-holder {
+  width: 90%;
+}
+
+#banner-content {
+  max-width: 30%;
+  align-content: space-between;
+}
+
+#social_buttons {
+  justify-content: space-around;
+  background-color: #0a1229;
+  padding: 10px;
+  position: absolute;
+  right: 1%;
+  z-index: 1;
+}
+
+.social-button {
+  width: 20px;
+  align-items: center;
+  padding: 10px;
+}
+
+.divider {
+  border: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+#section-contact {
+  position: relative;
+  top: -150px;
+  margin-bottom: -140px;
+}
+
+#contat_bar_holder {
+  justify-content: right;
+}
+
+#contat_bar {
+  width: 80%;
+  justify-content: space-around;
+  background-color: #e47312;
+  background-image: linear-gradient(186deg, #e47312, #ff6361);
+}
+
+.contact-card {
+  align-content: center;
+  align-items: center;
+  color: #ffffff;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+.contact-card i {
+  font-size: 20px;
+}
+
+.contact-card h4 {
+  margin-bottom: 0px;
+  font-size: 13px;
+  line-height: 20px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.contact-card a {
+  color: #ffffff;
+  font-weight: bold;
+  width: fit-content;
+  padding-bottom: 4px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0);
+  margin-top: 1em;
+}
+
+.contact-card a:hover {
+  border-bottom: 2px solid rgba(255, 255, 255, 1);
+}
+
+#services {
+  margin-top: 6em;
+  align-items: center;
+}
+
+#services .section_heading {
+  width: 90%;
+}
+
+#services #service_cards {
+  width: 90%;
+}
+
+.section_heading {
+  margin-bottom: 6em;
+}
+
+.section_heading_front {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 42px;
+  line-height: 50px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  z-index: 2;
+}
+
+.section_heading_back {
+  color: #f9f9fc;
+  font-size: 120px;
+  letter-spacing: 11px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  z-index: -1;
+  text-transform: uppercase;
+}
+
+.section_heading_back_holder {
+  position: relative;
+  top: -10em;
+  left: -2em;
+  margin-bottom: -16em;
+}
+
+.section_heading_link {
+  color: #919198;
+  font-size: 13px;
+  letter-spacing: 1px;
+  padding-bottom: 4px;
+  font-weight: bold;
+  width: fit-content;
+  height: fit-content;
+  border-bottom: 2px solid rgba(228, 115, 18, 0);
+}
+
+.section_heading_link:hover {
+  border-bottom: 2px solid rgba(228, 115, 18, 1);
+}
+
+#service_cards {
+  justify-content: space-between;
+}
+
+.service_card {
+  width: 20%;
+}
+
+.service_card_image {
+  width: 46px;
+  height: 46px;
+  margin-bottom: 20px;
+}
+
+.service_card_title {
+  margin-top: 0px;
+  font-size: 17px;
+  line-height: 30px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.service_card_text {
+  margin-bottom: 20px;
+}
+
+.service_card_link {
+  padding-bottom: 2px;
+  border-bottom: 2px solid rgba(228, 115, 18, 0);
+  width: fit-content;
+  font-weight: bold;
+  color: rgb(145, 145, 152, 1);
+}
+
+.service_card_link:hover {
+  border-bottom: 2px solid rgba(228, 115, 18, 1);
+}
+
+#about {
+  margin-top: 8em;
+  align-items: center;
+}
+
+#about_main,
+#about_facts {
+  width: 90%;
+}
+
+#about_main .column {
+  max-width: 50%;
+}
+
+#about_main .description {
+  padding-left: 100px;
+}
+
+#about_facts {
+  justify-content: space-between;
+  margin-top: 4em;
+}
+
+.fact_number {
+  margin-bottom: 10px;
+  color: #e47312;
+  font-size: 60px;
+  line-height: 70px;
+  font-weight: 500;
+}
+
+.fact_card {
+  padding-right: 10%;
+}
+
+#work {
+  margin-top: 6em;
+  background-color: #f7f8fc;
+  padding-top: 6em;
+}
+
+#work .section_heading_back {
+  z-index: 1;
+  color: #f2f2f7;
+}
+
+#work_cards {
+  content: " ";
+  display: table;
+  grid-column-start: 1;
+  grid-row-start: 1;
+  grid-column-end: 2;
+  grid-row-end: 2;
+  margin-top: 2em;
+  padding: 20px;
+}
+
+.work_card {
+  margin-top: 20px;
+  margin-right: 20px;
+  width: 30%;
+  float: left;
+  min-height: 1px;
+  display: block;
+  position: relative;
+}
+
+.work_card:hover .work_card_overlay {
+  opacity: 1;
+}
+
+.work_card_link {
+  max-width: 100%;
+  background-color: transparent;
+}
+
+.work_card_overlay {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  right: 0%;
+  bottom: 0%;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  transition: 0.2s;
+  opacity: 0;
+}
+
+.work_card_circle {
+  width: 90px;
+  height: 90px;
+  padding-right: 11px;
+  padding-left: 11px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  background-image: linear-gradient(59deg, #ff6361, #e47312);
+  color: #fff;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 500;
+  text-align: center;
+  letter-spacing: 1px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+#get_quote {
+  padding-top: 7%;
+  padding-bottom: 7%;
+  justify-content: center;
+  color: #ffffff;
+  background-color: #e47312;
+  background-image: linear-gradient(72deg, #e47312, rgba(255, 99, 97, 0.78)),
+    url("https://nuuk-e3eaa.firebaseapp.com/assets/img/banner-2.jpg");
+  background-position: 0px 0px, 50% 50%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+  background-attachment: scroll, fixed;
+  align-items: center;
+}
+
+#get_quote h1 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 42px;
+  line-height: 50px;
+  text-transform: uppercase;
+}
+
+.paragraph-white {
+  margin-bottom: 5px;
+  color: hsla(0, 0%, 100%, 0.7);
+}
+
+#get_quote a {
+  color: #ffffff;
+  border-bottom: 2px solid rgba(255, 255, 255, 0);
+}
+
+#get_quote a:hover {
+  border-bottom: 2px solid rgba(255, 255, 255, 1);
+}
+
+#team {
+  background-color: #f7f8fc;
+  padding-top: 6em;
+  align-items: center;
+  padding-bottom: 4em;
+}
+
+#team .section_heading_back {
+  z-index: 1;
+  color: #f2f2f7;
+}
+
+#team .section_heading,
+#team #team_cards {
+  width: 90%;
+}
+
+#team_cards {
+  justify-content: space-between;
+}
+
+.team_card {
+  width: 22%;
+  position: relative;
+  float: left;
+  min-height: 1px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.team_photo {
+  min-height: 300px;
+  background-position: 50% 0%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#team_photo_1 {
+  background-image: url("https://nuuk-e3eaa.firebaseapp.com/assets/img/team-1.jpg");
+}
+
+#team_photo_2 {
+  background-image: url("https://nuuk-e3eaa.firebaseapp.com/assets/img/team-2.jpg");
+}
+
+#team_photo_3 {
+  background-image: url("https://nuuk-e3eaa.firebaseapp.com/assets/img/team-3.jpg");
+}
+
+#team_photo_4 {
+  background-image: url("https://nuuk-e3eaa.firebaseapp.com/assets/img/team-4.jpg");
+}
+
+.team_description {
+  padding: 1em;
+  background-color: #ffffff;
+}
+
+.team_description h1 {
+  margin-top: 0px;
+}
+
+.team_bar {
+  background-color: #e47312;
+  width: fit-content;
+  padding: 0.4em;
+  position: absolute;
+  left: auto;
+  top: auto;
+  right: 0%;
+  bottom: 0%;
+}
+
+#testimonial {
+  padding-top: 4em;
+  padding-bottom: 4em;
+  background-color: #f7f8fc;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.client_card {
+  position: relative;
+  display: block;
+  width: fit-content;
+  margin: 50px auto 61px;
+  padding: 80px 30px 26px;
+  background-color: #fff;
+  text-align: center;
+}
+
+#testimonial .description {
+  width: 40%;
+  margin-right: 4em;
+}
+
+#client_cards {
+  width: 90%;
+  margin-right: 2em;
+}
+
+.client_card_circle {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  margin: -115px auto 25px;
+  justify-content: center;
+  align-items: stretch;
+  border-radius: 100%;
+  background-image: linear-gradient(8deg, #ff6361, #e47312);
+  opacity: 1;
+  color: #ffffff;
+  font-size: 80px;
+  line-height: 80px;
+}
+
+.client_card_circle .text {
+  padding-top: 12px;
+}
+
+.client_card_title {
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.client_card_job_title {
+  margin-bottom: 0px;
+  color: #bdbdc9 !important;
+  font-size: 16px;
+}
+
+.card_column {
+  margin-left: 1em;
+}
+
+#news {
+  padding-top: 6em;
+  padding-bottom: 4em;
+}
+
+#blog_cards {
+  justify-content: space-between;
+  color: #ffffff !important;
+}
+
+.blog_card {
+  margin-right: 1em;
+}
+
+.blog_card_link {
+  align-items: flex-start;
+  text-decoration: none;
+  justify-content: flex-start;
+}
+
+.blog_card_image_holder {
+  position: relative;
+  background-color: #5c5c5c;
+}
+
+.blog_card_image {
+  max-width: 100%;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.blog_card_date_box {
+  position: absolute;
+  left: auto;
+  top: 0%;
+  right: 0%;
+  bottom: auto;
+}
+
+.blog_card_date {
+  width: 70px;
+  height: 70px;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(45deg, #ff6361, #e47312);
+  color: #fff;
+  font-size: 26px;
+  font-weight: 400;
+}
+
+.blog_card_month {
+  width: 70px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  color: #9d9da5;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.blog_card_description_holder {
+  max-width: 100%;
+  padding: 2em;
+  background-color: #e47312;
+  background-image: linear-gradient(158deg, #e47312, #ff6361);
+}
+
+.blog_card_description_title {
+  margin-right: 0px;
+  margin-bottom: 15px;
+  font-size: 19px;
+  line-height: 26px;
+  color: #ffffff !important;
+}
+
+.blog_card_description_text {
+  margin-bottom: 5px;
+  color: hsla(0, 0%, 100%, 0.7);
+}
+
+.blog_card_description_link {
+  display: inline-block;
+  color: #ffffff;
+  font-size: 13px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  position: relative;
+  margin-top: 15px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-bottom: 5px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+.blog_card_description_link a {
+  color: #ffffff;
+}
+
+.blog_card_description_link:hover {
+  border-bottom: 2px solid rgba(255, 255, 255, 1);
+}
+
+#trusted_companies {
+  justify-content: center;
+}
+
+#trusted_companies_box {
+  width: 98%;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  background-image: linear-gradient(56deg, #e47312, #ff6361);
+}
+
+#trusted_companies_title {
+  color: #ffffff;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.trusted_companies_logo {
+  font-family: "Dosis", sans-serif;
+  font-size: 26px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #ffffff !important;
+  text-transform: uppercase;
+}
+
+#footer,
+#footer_logo_section {
+  position: relative;
+  z-index: 1;
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  padding-right: 50px;
+  padding-left: 50px;
+  border-top: 1px solid #2f3038;
+  background-color: #0a1229;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff !important;
+}
+
+.footer_holder {
+  justify-content: space-between;
+}
+
+.footer_card {
+  width: 30%;
+}
+
+.footer_heading_holder {
+  justify-content: flex-start;
+  position: relative;
+}
+
+.footer_heading_line_holder {
+  height: 100%;
+  width: fit-content;
+}
+
+.footer_heading_line {
+  position: absolute;
+  left: 0%;
+  top: 8px;
+  right: auto;
+  bottom: auto;
+  width: 100%;
+  height: 1px;
+  background-color: #ff6361;
+  color: #ff6361;
+}
+
+.footer_link {
+  width: fit-content;
+  color: #ffffff;
+  padding-bottom: 6px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0);
+}
+
+.footer_link:hover {
+  border-bottom: 2px solid rgba(255, 255, 255, 1);
+}
+
+#footer_logo_section {
+  border-top: 0px;
+  padding-bottom: 0px;
+  justify-content: flex-start;
+}
+
+.footer_logo {
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#logo_container {
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.logo_holder {
+  order: -1;
+  background-color: #e47312 !important;
+  align-self: stretch;
+  padding: 50px 35px;
+}
+
+.logo_holder img {
+  max-width: 100%;
+  vertical-align: middle;
+  display: inline-block;
+}

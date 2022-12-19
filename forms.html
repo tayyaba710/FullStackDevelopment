@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms</title>
+    <style>
+        header,
+        main {
+            text-align: center;
+            margin: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>Employee Interest Survey Form</header>
+    <main>
+        <section class="content">
+            <div>
+                <label for="name">Enter your name:</label>
+                <input type="text">
+                <div>
+                    <label for="department">Enter your Department:</label>
+                    <input type="text"><br>
+                </div>
+                <div>
+                    <label for="about">Tell Us little about Yourself:</label>
+                    <textarea name="about" id="about" cols="20" rows="3"></textarea>
+                </div>
+            </div><br>
+            <div>
+                <label>Do You exercise at home:</label>
+                <input type="radio" id="yes" value="yes">
+                <label for="yes">Yes</label>
+                <input type="radio" id="no" value="no">
+                <label for="no">No</label>
+            </div>
+            <div>
+                <p>How do you like to read about your favorite topics?</p>
+                <input type="checkbox" id="books" value="books">
+                <label for="books">books</label>
+                <input type="checkbox" id="books" value="books">
+                <label for="">Online Resorces</label>
+                <input type="checkbox" id="books" value="books">
+                <label for="">Phoneapps</label>
+                <input type="checkbox" id="books" value="books">
+                <label for="">magzines</label><br>
+            </div><br>
+            <div>
+                <label>what genre of movie do you like:</label>
+                <select>
+                    <option> comedy</option>
+                </select>
+            </div>
+            <br>
+            <input type="submit" value="Submit Form">
+        </section>
+    </main>
+</body>
+
+</html>

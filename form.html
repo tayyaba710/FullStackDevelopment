@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>HTML FORM</title>
+    <style>
+        body {
+            font-size: 1.2em;
+            background: url(https://wallpapercave.com/wp/Fdh76FQ.jpg);
+        }
+
+        header {
+            background-color: orange;
+            margin: 20px 40px 20px 40px;
+            border-radius: 20px;
+            text-align: center;
+            padding: 5px;
+
+        }
+
+        .asd {
+            display: inline-block;
+            text-align: right;
+            width: 40%;
+            vertical-align: top;
+            margin-top: 20px;
+            font-size: 15px;
+        }
+
+        .asd-tab {
+            display: inline-block;
+            text-align: left;
+            width: 50%;
+            vertical-align: top;
+            margin-top: 20px;
+            font-size: 15px;
+        }
+
+        .asdf {
+            background-color: red;
+            border: none;
+            color: white;
+            padding: 02px 04px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="box">
+            <h1 id="title">WELCOME TO SOUTH PARK!</h1>
+        </div>
+        <hr>
+        <p id=""> Tell us about your experience with South Park</p>
+
+    </header>
+
+    <form action="">
+        <div class="asd">
+            <label for="fname">*Full Name:</label><br>
+        </div>
+
+        <div class="asd-tab">
+            <input type="text" id="fname" name="fname" placeholder="Enter your name"><br>
+        </div>
+
+        <div class="asd">
+            <label for="email">*Email:</label><br>
+
+        </div>
+
+        <div class="asd-tab">
+            <input type="text" id="lname" name="Email" placeholder="email@gmail.com"><br>
+        </div>
+
+        <div class="asd">
+            <label for="age">*Age:</label><br>
+
+        </div>
+
+        <div class="asd-tab">
+            <input type="text" id="lname" name="Age" placeholder="15"><br>
+        </div>
+
+        <div class="asd">
+            <label for="park">How do you watch South Park?:</label><br>
+        </div>
+        <div class="asd-tab"><select name="seasons" id="lang">
+                <option value="javascript">JavaScript</option>
+                <option value="php">PHP</option>
+                <option value="java">Java</option>
+                <option value="golang">Golang</option>
+                <option value="python">Python</option>
+                <option value="c#">C#</option>
+                <option value="C++">C++</option>
+                <option value="erlang">Erlang</option>
+            </select> </div>
+
+
+        <div class="asd">
+            <label for="lname">How many seasons of South Park have you watched?:</label><br>
+        </div>
+        <div class="asd-tab">
+
+            <select name="seasons" id="lang">
+                <option value="javascript">JavaScript</option>
+                <option value="php">PHP</option>
+                <option value="java">Java</option>
+                <option value="golang">Golang</option>
+                <option value="python">Python</option>
+                <option value="c#">C#</option>
+                <option value="C++">C++</option>
+                <option value="erlang">Erlang</option>
+            </select>
+        </div>
+
+        <div class="asd">
+            <label for="lname">Who do you watch South Park with? (Check all the)</label><br>
+        </div>
+        <div class="asd-tab">
+            <input type="radio" id="html" name="fav_language" value="HTML">
+            <label for="html">HTML</label><br>
+            <input type="radio" id="css" name="fav_language" value="CSS">
+            <label for="css">CSS</label><br>
+            <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+            <label for="javascript">JavaScript</label><br>
+        </div>
+
+        <div class="asd">
+            <label for="lang">How many seasons of South Park have you watched ?</label>
+        </div>
+        <div class="asd-tab">
+            <select name="seasons" id="lang">
+                <option value="javascript">1</option>
+                <option value="php">PHP</option>
+                <option value="java">Java</option>
+                <option value="golang">Golang</option>
+                <option value="python">Python</option>
+                <option value="c#">C#</option>
+                <option value="C++">C++</option>
+                <option value="erlang">Erlang</option>
+            </select>
+        </div>
+
+
+        <div class="asd">
+            <label for="lang">Who</label>
+        </div>
+        <div class="asd-tab">
+            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+            <label for="vehicle1"> Alone</label><br>
+            <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+            <label for="vehicle2"> Friends</label><br>
+            <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+            <label for="vehicle3"> Family</label><br>
+            <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+            <label for="vehicle3"> Partner</label><br>
+            <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+            <label for="vehicle3"> Other</label><br>
+            <br><br>
+        </div>
+        <br><br>
+        <div class="asdf">
+            <input type="submit" value="Submit">
+        </div>
+
+    </form>
+</body>
+
+</html>
